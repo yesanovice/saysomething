@@ -1,11 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 
 export const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY,
-  {
-    auth: {
-      persistSession: false
-    }
-  }
+  'https://ezoidfgpazczkhrydozeg.supabase.co',
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6b2lkZmdwYXpja2hyeWRvemVnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg0MzA3MDMsImV4cCI6MjA5NDAwNjcwM30.mjFbPp0-gh5CBFkZm7Tv6E_5BloBMVlQCDkcAH0iasI'
 )
