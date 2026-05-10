@@ -1,0 +1,157 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
+  color: #111;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #111;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #111;
+}
+
+.page {
+  padding: 3rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.hero p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: none;
+  background: #fff;
+  outline: none;
+  color: #111;
+  transition: border 0.15s;
+}
+
+textarea:focus { border-color: #111; }
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.count.warn { color: #e05; }
+
+button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+button:hover { opacity: 0.75; }
+button:disabled { opacity: 0.35; cursor: not-allowed; }
+
+.success { font-size: 0.85rem; color: #080; }
+.error { font-size: 0.85rem; color: #e05; }
+
+.see-all {
+  font-size: 0.88rem;
+  color: #888;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.see-all:hover { color: #111; }
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #111;
+}
+
+.card span {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+.muted {
+  font-size: 0.9rem;
+  color: #bbb;
+}
